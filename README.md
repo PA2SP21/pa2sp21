@@ -1,4 +1,4 @@
-# CSCI 21 - Spring 2021q #
+# CSCI 21 - Spring 2021 #
 
 ### What is this repository for? ###
 
