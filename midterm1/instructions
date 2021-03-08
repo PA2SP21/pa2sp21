@@ -1,0 +1,11 @@
+Complete the Calculator Class.
+Information about the Class is in the interface file (calculator.h)
+Notes:
+The only file you need to change is calculator.cpp
+
+To Compile:                    g++ *.cpp
+To Compile with Warning Flags: g++ -Wall -Wextra -pedantic *.cpp
+To Run:                        ./a.out
+
+
+A Program that DOES NOT COMPILE will receive partial credit!
