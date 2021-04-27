@@ -1,0 +1,86 @@
+Midterm #2 Instructions
+--------------------------------------------------------------------------------
+In this program you will implement a class to store a list of natural numbers.
+Natural Numbers are positive integers, not including zero. The class will be
+named NaturalList. This class will internally store the list as a dynamic array.
+It will give you the ability to:
+
+•	Add information to the list
+•	Get an element from the list
+•	Output the list as a comma separated list
+•	Get the size of the list
+•	Get the capacity of the list
+•	Get the sum of the values in the list
+•	Get the average of the values in the list
+•	Empty the list
+
+It should have three member variables:
+1) A variable to hold the dynamic array
+2) A variable to hold the current size of the list
+3) A variable to hold the maximum capacity of the list.
+
+Constructor
+------------------
+Creates a dynamic array of unsigned integers of the given size. Initializes the
+current size of the list and sets the maximum capacity to the given capacity.
+@param unsigned int - The maximum capacity of the list.
+
+Destructor
+------------------
+Frees any dynamic memory created in your class.
+
+Add
+------------------
+Adds an item to the first open spot in the array (the end of the "list"). If the
+list is full or if the value is not a natural number do not add and return
+false.
+@param unsigned int - The value to add.
+@return bool - True if there was room to add, False if the list is full or if
+               the number is not a natural number.
+
+GetNumber
+------------------
+Returns the natural number at the given index. If the index is not valid return 
+0.
+@param unsigned int - The index of the number to get
+@return unsigned int - The natural number at the given index
+
+ToString
+------------------
+Creates a comma separated string of all of the values in the list. i.e.
+"1, 5, 9, 3, 2". If the list is empty, return "List Empty".
+@return string - A comma separated string or "List Empty".
+
+GetSize
+------------------
+Returns the current size of the list.
+@return unsigned int - The size of the list.
+
+GetCapacity
+------------------
+Returns the current capacity of the list.
+@return unsigned int - The capacity of the list.
+
+Sum
+------------------
+Returns the sum of the items in the list. If the list is empty return 0.
+@return unsigned int - The sum, or 0 on empty.
+
+Average
+------------------
+Returns the mean average of the items in the list. If the list is empty return 
+0.
+@return double - The mean average as a floating-point.
+
+Clear
+------------------
+Empties the list (i.e. deletes the dynamic array) and recreates it at the
+indicated size. Size must be at least 1. If size is less than 1 recreate it with
+a size of 10.
+@param unsigned int - The new size of the list.
+
+
+Your files should be named natural_list.h and natural_list.cpp
+
+To compile: g++ -Wall -Wextra -pedantic unit_test.cpp natural_list.cpp
+To run: ./a.out or ./a.exe
